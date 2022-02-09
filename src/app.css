@@ -1,0 +1,59 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+button{
+    outline: 0;
+    padding: 0;
+    border: none;
+}
+*{
+    box-sizing: border-box;
+    font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+}
+.light-mode{
+    --color-ffffff:#ffffff;
+    --color-f5f5f5:#f5f5f5;
+    --color-ccc:#cccccc;
+    --color-000:#000000;
+    --color-e2e2e2:#e2e2e2;
+    --font-color-000:#000000;
+    --font-color-bdbdbd:#bdbdbd;
+    --font-color-title:#212121;
+    --font-color-subtitle:#2b2b2b;
+}
+.dark-mode{
+    --color-ffffff:#212121;
+    --color-f5f5f5:#121212;
+    --color-ccc:#303030;
+    --color-000:#fafafa;
+    --color-e2e2e2:#3f3f3f;
+    --font-color-000:#e2e2e2;
+    --font-color-bdbdbd:#bdbdbd;
+    --font-color-title:#dddddd;
+    --font-color-subtitle:#cccccc;
+}
+.base{
+    transition: background-color 0.16s linear;
+    background-color: var(--color-f5f5f5);
+}
+.body{
+    margin-top: 88px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.circle-btn{
+    border-radius: 50%;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle-btn:active{
+    transform: scale(0.95);
+}
+.circle-btn:hover{
+    background-color: var(--color-e2e2e2);;
+}
+.img-dark{
+    filter: brightness(80%);
+}
