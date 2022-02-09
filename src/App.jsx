@@ -8,7 +8,7 @@ import './app.css'
 
 const App = () => {
 
-    const [is_menu_open, switch_menu_open] = useState(true);
+    const [is_menu_open, switch_menu_open] = useState(false);
     const [is_darkmode,switch_darkmode]=useState(false);
 
     
