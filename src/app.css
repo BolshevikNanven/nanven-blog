@@ -44,6 +44,14 @@ button{
     flex-wrap: nowrap;
     overflow: hidden;
 }
+.main-box{
+    flex: 1;
+    margin: 0 auto 0 auto;
+    max-width: 900px;
+    padding: 16px;
+    position: relative;
+    min-height: 100vh;
+}
 .circle-btn{
     border-radius: 50%;
     transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);

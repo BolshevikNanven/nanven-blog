@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import {NavLink,BrowserRouter,Router} from 'react-router-dom'
 
 import './menu.css'
 
@@ -12,18 +13,18 @@ const Menu=(props) => {
         <div className={`menu-box ${isMenuOpen ? '':'menu-box-close'}`}>
             <div className='menu'>
                 <div className='menu-body'>
-                    <div className='menu-list'>
+                    <NavLink className='menu-list' to="/acticle">
                         <span className='menu-list-icon fas fa-book fa-fw'></span>
                         <a className='menu-list-content '>文章</a>
-                    </div>
+                    </NavLink>
                     <div className='menu-list'>
                         <span className='menu-list-icon fas fa-folder-open fa-fw'></span>
-                        <a className='menu-list-content'>文件站</a>
+                        <a className='menu-list-content' href='http://nanvendrive.vercel.app' target={'_blank'}>文件站</a>
                     </div>
-                    <div className='menu-list'>
+                    <NavLink className='menu-list' to="/friend">
                         <span className='menu-list-icon fas fa-user-friends fa-fw'></span>
-                        <a className='menu-list-content'>友情链接</a>
-                    </div>
+                        <a className='menu-list-content '>友情链接</a>
+                    </NavLink>
                     <div className='menu-list'>
                         <span className='menu-list-icon fas fa-toolbox fa-fw'></span>
                         <a className='menu-list-content'>工具集</a>

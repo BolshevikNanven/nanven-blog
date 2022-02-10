@@ -8,7 +8,7 @@ const Main= (props) => {
     const {isDarkmode,switchDarkmode}=props;
 
     return(
-        <div className="main-box">
+        
             <div className='main'>
                 
                 <div className={`page_tool_bar ${page_switch_open ? 'tool_bar_active':''}`}>
@@ -54,7 +54,7 @@ const Main= (props) => {
                 </div>
 
             </div>
-        </div>
+        
     )
 }
 
