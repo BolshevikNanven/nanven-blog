@@ -1,12 +1,12 @@
 .menu-box-blank{
     padding: 8px;
-    width: 240px;
+    width: 234px;
     transition: transform .32s cubic-bezier(.86,0,.07,1),width .35s cubic-bezier(.86,0,.07,1);
 }
 .menu-box{
     position: fixed;
     padding: 8px;
-    width: 240px;
+    width: 234px;
     overflow-x: hidden;
     overflow-y: auto;
     transition: transform .28s ease-in-out;
@@ -29,17 +29,33 @@
 }
 .menu-list{
     padding: 0 16px;
-    min-height: 48px;
+    margin: 4px 0;
+    min-height: 42px;
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
+    position: relative;
     align-items: center;
     transition: background-color 0.26s ;
-    cursor: pointer;
+    cursor: default;
     color: var(--font-color-000);
     text-decoration: none;
 }
+.menu-list::before{
+    position: absolute;
+    left: 0;
+    content: '';
+    border-radius: 2px;
+    width: 3px;
+    height: 17px;
+    background-color: #3f7de2;
+    display: none;
+}
 .menu-list.active{
     background-color: var(--color-e2e2e2);
+}
+.menu-list.active::before{
+    display: block;
 }
 .menu-list:hover{
     background-color: var(--color-e2e2e2);
@@ -67,10 +83,11 @@
 }
 .menu-list-content{
     flex: 1;
-    margin-left: 32px;
-    font-size: 16px;
+    margin-left: 18px;
+    font-size: 14px;
     text-decoration: none;
     color: var(--font-color-000);
+    cursor: default;
 }
 @media screen and (max-width: 640px){
     .menu-box{
