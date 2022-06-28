@@ -36,7 +36,7 @@
     flex-direction: row;
     position: relative;
     align-items: center;
-    transition: background-color 0.26s ;
+    transition: background-color 0.26s ,transform 0.16s;
     cursor: default;
     color: var(--font-color-000);
     text-decoration: none;
@@ -61,7 +61,7 @@
     background-color: var(--color-e2e2e2);
 }
 .menu-list:active{
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
 .menu-subheader{
     padding: 0 16px;

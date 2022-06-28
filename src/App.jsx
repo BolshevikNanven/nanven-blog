@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Router, Routes,Route} from 'react-router-dom'
+import {Router, Routes,Route, Navigate} from 'react-router-dom'
 
 import Header from './conponents/Header'
 import Menu from './conponents/Menu'
@@ -25,7 +25,7 @@ const App = () => {
                 <Menu isMenuOpen={is_menu_open} />
                 <div className='main-box'>
                     <Routes>
-                        <Route path='/' element={<Acticle />} />
+                        <Route path='*' element={<Navigate to='/acticle' replace />} />
                         <Route path='/acticle' element={<Acticle />} />
                         <Route path='/friend' element={<Friend />} />
                     </Routes>
